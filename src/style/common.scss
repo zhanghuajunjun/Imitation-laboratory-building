@@ -105,6 +105,15 @@
 .marg-topss {
     margin-top: 30px;
 }
+.marg-topes {
+    margin-top: 20px;
+}
+.marg-tbes {
+    margin: 20px 0;
+}
+.marg-tbs {
+    margin: 10px 0;
+}
 /* 上外边距10px */
 .marg-tops {
     margin-top: 10px;
@@ -129,6 +138,7 @@
 }
 .container {
     background: rgb(249,249,249);
+    width: 100%;
 }
 .shequ {
     width: 120px;
@@ -142,9 +152,27 @@
 .hover:hover {
     cursor: pointer;
 }
+.hover1:hover {
+    box-shadow: 1px 1px 10px #ddd;
+}
 .yanse {
     color: white;
 }
 .fz-ss {
     font-size: 14px;
+}
+.two-item1 {
+    background: rgb(238,238,238);
+}
+.two-item2 {
+    background: white;
+    width: 400px;
+    height: 360px;
+    left: 261px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.box3 {
+    width: 1140px;
 }
