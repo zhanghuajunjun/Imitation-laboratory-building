@@ -97,8 +97,11 @@
 .padd-r {
     padding-right: 10px;
 }
+.padd-rsw {
+    padding-right: 15px;
+}
 /* 下内边距10px */
-.padd-r {
+.padd-b {
     padding-bottom: 10px;
 }
 /* 上外边距30px */
@@ -107,6 +110,18 @@
 }
 .marg-topes {
     margin-top: 20px;
+}
+.marg-topsw {
+    margin-top: 15px;
+}
+.marg-bo {
+    margin-bottom: 20px;
+}
+.marg-tbss {
+    margin: 30px 0;
+}
+.marg-tbsss {
+    margin: 40px 0 30px 0;
 }
 .marg-tbes {
     margin: 20px 0;
@@ -153,13 +168,21 @@
     cursor: pointer;
 }
 .hover1:hover {
-    box-shadow: 1px 1px 10px #ddd;
+    box-shadow: 1px 1px 10px 5px #ddd;
 }
 .yanse {
     color: white;
 }
 .fz-ss {
     font-size: 14px;
+}
+.fz-ss-c {
+    font-size: 14px;
+    color: #666;
+}
+.fz-es {
+    font-size: 24px;
+    color: #565656
 }
 .two-item1 {
     background: rgb(238,238,238);

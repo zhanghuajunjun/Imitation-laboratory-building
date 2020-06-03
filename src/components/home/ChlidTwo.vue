@@ -2,10 +2,12 @@
   <div class="pos-res">
     <div class="pos">
       <div class="pos-ab lll">
-        <div class="yanse bor flex-a-c fz-ss padd-lre" v-for="(item,index) in arr" :key="index">
-          <div class="marg-ris hoverlv">{{item.name}}</div>
-          <div class="marg-ris hoverlv">{{item.tags[0].name}}</div>
-          <div class="marg-ris hoverlv">{{item.tags[1].name}}</div>
+        <div class="padd-lre " v-for="(item,index) in arr" :key="index">
+          <div class="yanse bor flex-a-c fz-ss">
+            <div class="marg-ris hoverlv">{{item.name}}</div>
+            <div class="marg-ris hoverlv">{{item.tags[0].name}}</div>
+            <div class="marg-ris hoverlv">{{item.tags[1].name}}</div>
+          </div>
           <div
             class="two-item2 pos-ab bord"
             :style="{ top: index > 3 ? ((57 * (index-4))-0)+'px' : '0px'}"
@@ -34,7 +36,7 @@
         <swiper ref="mySwiper" :options="swiperOptions">
           <swiper-slide v-for="(item,index) in arr1" :key="index">
             <div class="lunbo" :style="{background:item.background_color}">
-              <img :src="item.picture_url" alt />
+              <img class=" hover" :src="item.picture_url" alt />
             </div>
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
@@ -98,14 +100,14 @@ export default {
 <style scoped lang='scss'>
 .bor {
   height: 57px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #bcbcbc;
 }
 .lll {
-  left: 0px;
+  left: 189.5px;
   top: 0px;
   width: 261px;
   z-index: 99;
-  background: rgba(0,0,0,.18);
+  background: rgba(0, 0, 0, 0.18);
 }
 
 .two-item {
@@ -115,30 +117,31 @@ export default {
   border-radius: 10px;
 }
 .hei {
-  height: 57px;
+  height: 61px;
 }
-.bor:hover {
+.padd-lre:hover {
   background: white;
+}
+.padd-lre:hover .bor {
   color: #000;
 }
 .bord {
   display: none;
 }
-.bor:hover .bord {
+.padd-lre:hover .bord {
   display: block;
 }
 .pos-res {
-  width: 100%;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 .pos {
-  width: 1140px;
+  width: 100%;
   position: relative;
 }
-.lunbo{
+.lunbo {
   width: 100%;
   height: 100%;
   text-align: center;
